@@ -1,6 +1,6 @@
 package prototypepattern;
 
-public class Class {
+public class Class implements Cloneable {
 
 	private String name;
 	private Student student;
@@ -17,5 +17,9 @@ public class Class {
 		this.student = student;
 	}
 	
+	public Class clone() throws CloneNotSupportedException{
+		Class class1=(Class) super.clone();
+		return class1;
+	}
 	
 }

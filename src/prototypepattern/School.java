@@ -3,7 +3,7 @@ package prototypepattern;
 public class School implements Cloneable {
 
 	private String name;
-	private Class class1;
+	private Class class1=new Class();
 
 	public String getName() {
 		return name;
@@ -21,7 +21,10 @@ public class School implements Cloneable {
 		this.class1 = class1;
 	}
 	
+	
 	public School clone() throws CloneNotSupportedException{
-			return (School) super.clone();
+		School school=(School) super.clone();
+		school.class1=this.class1.clone();
+			return school;
 	}
 }
