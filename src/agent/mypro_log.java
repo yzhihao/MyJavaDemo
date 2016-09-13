@@ -20,7 +20,7 @@ public class mypro_log implements InvocationHandler{
 	 * 
 	 * 返回值：
 	 * Object  方法的返回值
-	 * */
+	 * */ 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
@@ -28,5 +28,5 @@ public class mypro_log implements InvocationHandler{
 		method.invoke(target);
 		System.out.println("汽车日志结束....  ");
 		return null;
-	}
+	 }
 }

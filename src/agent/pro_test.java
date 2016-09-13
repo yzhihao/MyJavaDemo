@@ -21,5 +21,5 @@ public class pro_test {
 		mypro_log h = new mypro_log(m);
 		movable m1=(movable)Proxy.newProxyInstance(cls.getClassLoader(),cls.getInterfaces(), h);
 		m1.move();
-	}
+	  }
 }

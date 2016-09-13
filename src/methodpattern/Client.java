@@ -6,5 +6,4 @@ public class Client {
 		myplane.setPlane(myplane);
 		myplane.run();
 	}
-
 }
